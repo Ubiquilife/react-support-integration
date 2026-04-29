@@ -1,0 +1,34 @@
+{
+  "name": "@ubiquilife/react-support-integration",
+  "version": "0.1.0",
+  "description": "Drop-in React/Next.js support widget — floating help button + ticket form, posts to a Ubiquilife Support backend.",
+  "license": "MIT",
+  "author": "Ubiquilife",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["react", "nextjs", "support", "tickets", "ubiquilife"]
+}
