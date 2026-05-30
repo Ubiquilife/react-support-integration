@@ -28,7 +28,7 @@
     "@types/react": "^18.0.0",
     "react": "^18.0.0",
     "tsup": "^8.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.0"
   },
   "keywords": ["react", "nextjs", "support", "tickets", "ubiquilife"]
 }
