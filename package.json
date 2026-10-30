@@ -17,7 +17,7 @@
   },
   "files": ["dist", "README.md"],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup src/index.ts --format cjs,esm --clean && tsc -p . --emitDeclarationOnly",
     "dev": "tsup src/index.ts --format esm --watch"
   },
   "peerDependencies": {
