@@ -17,7 +17,7 @@
   },
   "files": ["dist", "README.md"],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup src/index.ts --format cjs,esm --clean && tsc -p . --emitDeclarationOnly",
     "dev": "tsup src/index.ts --format esm --watch"
   },
   "peerDependencies": {
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
-    "tsup": "^8.0.0",
+    "tsup": "^9.0.0",
     "typescript": "^7.0.0"
   },
   "keywords": ["react", "nextjs", "support", "tickets", "ubiquilife"]
